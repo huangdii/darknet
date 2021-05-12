@@ -1,0 +1,24 @@
+########EDITED BY JIYOON#######################
+1. pc : jetson nano 2GB
+
+2. Jetpack version
+
+$ sudo apt-cache show nvidia-jetpack
+
+Package: nvidia-jetpack
+Version: 4.5.1-b17
+Architecture: arm64
+Maintainer: NVIDIA Corporation
+Installed-Size: 194
+Depends: nvidia-cuda (= 4.5.1-b17), nvidia-opencv (= 4.5.1-b17), nvidia-cudnn8 (= 4.5.1-b17),
+
+.....
+
+
+3. opencv version: opencv 4.1.1
+4. cuda version: cuda-10.2
+
+#################################################3
+
+I only edited darknet/Makefile  and darknet/src/image_opencv.cpp 
+and add "darknet_logitech_person.py"  to detect only these labels (person, cat, car, truck, bus, bicycle)
